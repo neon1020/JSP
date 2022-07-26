@@ -34,7 +34,7 @@ String passwd = request.getParameter("passwd");
 			<script type="text/javascript">
 // 				location.href="requestPro4_responseResult1.jsp"
 			</script>
-		<%} else { %> --%>
+		<%} else { %>
 			<script type="text/javascript">
 // 				location.href="requestPro4_responseResult2.jsp"
 			</script>
