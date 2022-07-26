@@ -64,9 +64,42 @@
 		<tr>
 			<td>성별</td><td><%=strGender %></td>
 		</tr>
-<!-- 		<tr> -->
-<%-- 			<td>취미</td><td><%=strHobbies %></td> --%>
-<!-- 		</tr> -->
+		<tr>
+			<td>취미</td>
+			<!-- 취미가 3개 미만으로 선택될 시 예외(오류) 발생! -->
+			<%-- <td><%=strHobbies[0] %>, <%=strHobbies[1] %>, <%=strHobbies[2] %></td> --%>
+			<td>
+			<%
+			// 하나도 체크 안 하면 null값 저장되므로 예외 발생
+// 			for(int i = 0; i < strHobbies.length; i++) {
+// 				out.println(strHobbies[i] + " ");
+// 			}
+			%>
+			
+			<%-- <%if(strHobbies == null) { %> --%>
+				<!-- 스크립틀릿 외부! 자바스크립트 사용 가능 -->
+				<script type="text/javascript"> // 주석 사용 주의!
+// 					alert("취미 선택 필수!");
+// 					history.back();
+				</script>
+			<%-- <%}%> --%>
+
+			<%
+			if(strHobbies == null) {
+				out.println("없음");
+			} else {
+				for(int i = 0; i < strHobbies.length; i++) {
+	 				out.println(strHobbies[i] + " ");
+	 			}
+			}
+			%>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="button" value="뒤로가기" onclick=history.back()>
+			</td>
+		</tr>
 	</table>
 	
 </body>
