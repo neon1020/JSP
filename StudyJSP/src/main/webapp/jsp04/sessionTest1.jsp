@@ -44,5 +44,8 @@
 	<!-- 세션 유지시간 10초로 변경 -->
 	<%session.setMaxInactiveInterval(10); %>
 	<h3>현재 세션 유지시간 : <%=session.getMaxInactiveInterval() %>초</h3>
+	
+	<!-- invalidate() 메서드 호출 후에는 새로운 세션 생성 전까지 세션 접근 불가 -->
+	<!-- 다른 페이지로 이동하는 등의 작업 수행 시 새로운 세션 생성됨 -->
 </body>
 </html>
