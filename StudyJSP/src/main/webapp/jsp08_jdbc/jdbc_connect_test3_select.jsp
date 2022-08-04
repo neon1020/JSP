@@ -35,7 +35,7 @@
 	PreparedStatement pstmt = con.prepareStatement(sql);
 	
 	// 4단계
-	// => PreparedStatement 객체의 executeQuery() 메서드를 호출하여 SELECT 구문을 실행하고
+	// => PreparedStatement 객체의 executeQuery() 메소드를 호출하여 SELECT 구문을 실행하고
 	//    리턴되는 결과값을 java.sql.ResultSet 타입 변수에 저장
 	ResultSet rs = pstmt.executeQuery();
 	
@@ -44,9 +44,9 @@
     +------+--------+
     | idx  | name   | <- 현재 커서(Cursor) 위치(항상 첫번째 레코드 위에 위치)
     +------+--------+
-    |    1 | 홍길동 | <- rs.next() 메서드를 한 번 호출했을 때의 커서 위치(true 리턴 = 레코드 있음)
-    |    2 | 이순신 | <- rs.next() 메서드를 두 번 호출했을 때의 커서 위치(true 리턴 = 레코드 있음)
-    +------+--------+ <- rs.next() 메서드를 세 번 호출했을 때의 커서 위치(false 리턴 = 레코드 없음)
+    |    1 | 홍길동 | <- rs.next() 메소드를 한 번 호출했을 때의 커서 위치(true 리턴 = 레코드 있음)
+    |    2 | 이순신 | <- rs.next() 메소드를 두 번 호출했을 때의 커서 위치(true 리턴 = 레코드 있음)
+    +------+--------+ <- rs.next() 메드를 세 번 호출했을 때의 커서 위치(false 리턴 = 레코드 없음)
 	*/
 	
 // 	out.println(rs.next()); // true
