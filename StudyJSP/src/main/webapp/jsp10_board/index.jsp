@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!-- top.jsp 포함시키기 -->
+	<jsp:include page="inc/top.jsp"></jsp:include>
 	<h1 align="center">메인페이지</h1>
 	<hr>
 	<h1><a href="board/writeForm.jsp">글쓰기</a></h1>

@@ -15,6 +15,7 @@
 	// -------------------------------------------------------------------
 	
 	// jdbc 활용하여 study_jsp3 데이터베이스 내의 student 테이블에 데이터 추가
+	
 	String driver ="com.mysql.cj.jdbc.Driver";
 	String url = "jdbc:mysql://localhost:3306/study_jsp3";
 	String user = "root";
