@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1 align="center">패션의류, 잡화, 뷰티 페이지입니다.</h1>
+	<h1 align="center">패션의류, 잡화, 뷰티 페이지입니다. </h1>
 </body>
 </html>
