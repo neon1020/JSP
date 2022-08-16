@@ -30,7 +30,10 @@ pstmt.setString(2, passwd);
 //4단계
 ResultSet rs = pstmt.executeQuery();
 
+//만약, 조회 결과가 있을 경우(rs.next() 가 true) 로그인 성공이므로
+//=> 세션 객체에 "sId" 라는 속성명으로 로그인 아이디를 저장하고 메인페이지(index.jsp)로 이동
 if(rs.next()) {
+	session.setAttribute("sId", id);
 	response.sendRedirect("../index.jsp");
 } else {
 	%>
